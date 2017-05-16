@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Plane.create(name: 'Rafale', origin: 'France', stars: 5)
+Plane.create(name: 'F22', origin: 'USA', stars: 4)
+Plane.create(name: 'SU35', origin: 'Russia', stars: 3)

@@ -1,0 +1,8 @@
+<h1>Planes supermarket</h1>
+<%= form_for@plane do |f| %>
+  <%= f.text_field :name %>
+  <%= f.text_field :origin %>
+  <%= f.label :stars %>
+  <%= f.number_field :stars %>
+  <%= f.submit %>
+<% end %>

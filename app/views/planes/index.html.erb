@@ -1,0 +1,10 @@
+<h1>Planes supermarket</h1>
+<p><%= link_to "Add new plane", new_plane_path %></p>
+<% @planes.each do |plane| %>
+  <h2><%= plane.name %></h2>
+  <p><%= plane.origin %></p>
+  <p><%= "*" * plane.stars %></p>
+  <p><%= link_to "See more", plane_path(plane) %>
+    <%= link_to "Update", edit_plane_path(plane) %>
+  </p>
+<% end %>

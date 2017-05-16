@@ -1,0 +1,12 @@
+<h1>Planes supermarket</h1>
+  <h2><%= @plane.name %></h2>
+  <p><%= @plane.origin %></p>
+  <p><%= "*" * @plane.stars %></p>
+  <p><%= link_to "Update", edit_plane_path(@plane) %>
+    <%= link_to "Back to index", planes_path %>
+    <%= link_to "Delete", plane_path(@plane),
+    method: :delete,
+    data: { confirm: "Are you sure?" } %>
+  </p>
+
+
